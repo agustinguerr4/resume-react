@@ -31,6 +31,4 @@ export const Icon = styled.i`
 display:block;
 font-size:2.3rem;
 margin-bottom:-1rem;
-&:active{
-    color: #7ac565;
-}`;
+`;

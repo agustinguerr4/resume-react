@@ -6,15 +6,16 @@ import CardResume from './components/CardResume/CardResume';
 import MainView from './components/MainView/MainView';
 import Slide from './components/Slide/Slide';
 
+
 function App() {
 
   return (
-    <s.App>
-      <Sidebar/>
-      <CardResume/>
-      <MainView/>
-      <Slide></Slide>
-    </s.App>
+      <s.App>
+        <Sidebar />
+        <CardResume />
+        <MainView />
+        <Slide></Slide>
+      </s.App>
   );
 }
 

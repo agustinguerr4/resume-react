@@ -41,6 +41,7 @@ export const IconNext = styled.i`
     transition: .3s ease-in all;
 }
 &:hover{
+    cursor:pointer;
     &:after{
     border-color: #7ac565;
     }
@@ -59,6 +60,7 @@ export const IconPrev = styled.i`
     transition: .1s ease-in all;
 }
 &:hover{
+    cursor:pointer;
     &:after{
     border-color: #7ac565;
     }

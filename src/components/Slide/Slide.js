@@ -1,14 +1,21 @@
 import React from 'react'
 import * as s from './Slide.style'
+import {menuData} from '../../utils/menuData'
+import { useRecoilState} from 'recoil';
+import { menuSelectedState } from '../../Recoil/atom';
+
 
 const Slide = () => {
+    const [menuSelected, setMenuSelected] = useRecoilState(menuSelectedState);
 
     const next = () =>{
-        console.log('va pa lante')
+        menuSelected < (menuData.length - 1) ? setMenuSelected(menuSelected + 1) : setMenuSelected(0)
+        //console.log(menuSelected)
     }
 
     const prev = () =>{
-        console.log('va pa tra')
+        !!menuSelected ? setMenuSelected(menuSelected - 1) : setMenuSelected(menuData.length - 1)
+        //console.log(menuSelected)
     }
 
     return (
