@@ -1,9 +1,10 @@
 import styled from '@emotion/styled';
 
 export const SidebarContainer = styled.div`
-    height:100vh;
-    width:8%;
+    grid-column:1;
+    grid-row: 1;
     background-color: #222222;
+    width:100%;
 `;
 
 export const MenuItemsContainer = styled.div`
