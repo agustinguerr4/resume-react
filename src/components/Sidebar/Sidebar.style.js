@@ -11,17 +11,17 @@ export const MenuItemsContainer = styled.div`
 flex-direction: column;
 display:flex;
 align-items:center;
+
 `
 
 export const MenuItem = styled.div`
 border-bottom: solid 1px #333333;
-height:12vh;
 width:100%;
 color:#eeeeee;
 display:block;
 font-size:.7rem;
 text-align:center;
-padding-top:1rem;
+padding:1rem 0rem;
 &:hover{
     color: #7ac565;
 }

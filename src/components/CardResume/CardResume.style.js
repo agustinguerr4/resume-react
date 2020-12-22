@@ -82,7 +82,7 @@ export const ButtonCV = styled.button`
 display:flex;
 height:40px;
 align-items:center;
-margin:50px auto;
+margin:30px auto;
 outline:none;
 background:transparent;
 border: 1px solid #eeeeee;
