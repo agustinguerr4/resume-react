@@ -13,7 +13,7 @@ function App() {
       <Sidebar/>
       <CardResume/>
       <MainView/>
-      <Slide isItemSelected={isItemSelected}></Slide>
+      <Slide></Slide>
     </s.App>
   );
 }
