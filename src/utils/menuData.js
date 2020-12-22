@@ -2,6 +2,8 @@ import { BiHome,BiUserCircle } from 'react-icons/bi'
 import {BsFillBriefcaseFill } from 'react-icons/bs'
 import {FaGraduationCap} from 'react-icons/fa'
 import {FiMail} from 'react-icons/fi'
+import {ImBlog} from 'react-icons/im'
+
 
 export const menuData = [
     {
@@ -10,19 +12,23 @@ export const menuData = [
         icon: <BiHome/>
     }, {
         name: 'About',
-        to: '/',
+        to: '/about',
         icon: <BiUserCircle/>
     }, {
         name: 'Resume',
-        to: '/',
+        to: '/resume',
         icon: <FaGraduationCap/>
     }, {
         name: 'Portfolio',
-        to: '/',
+        to: '/portfolio',
         icon: <BsFillBriefcaseFill/>
     }, {
+        name: 'Blog',
+        to: '/blog',
+        icon: <ImBlog/>
+    }, {
         name: 'Contact',
-        to: '/',
+        to: '/contact',
         icon: <FiMail/>
     }
 ]
