@@ -17,11 +17,12 @@ align-items:center;
 export const MenuItem = styled.div`
 border-bottom: solid 1px #333333;
 width:100%;
-color:#eeeeee;
+color: ${p => p.isSelected === p.index ? '#7ac565;' : '#eeeeee;'};
 display:block;
 font-size:.7rem;
 text-align:center;
 padding:1rem 0rem;
+transition: .3s all;
 &:hover{
     color: #7ac565;
 }

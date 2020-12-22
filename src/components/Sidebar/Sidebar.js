@@ -22,7 +22,7 @@ const Sidebar = () => {
                       <Link to={item.to} key={index} 
                           onClick={ () => {handleSelectMenu(index)}  }
                           >
-                        <s.MenuItem>
+                        <s.MenuItem isSelected={menuSelected} index={index}> 
                         <s.Icon>
                             {item.icon}
                         </s.Icon>
