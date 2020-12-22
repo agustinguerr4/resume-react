@@ -3,19 +3,22 @@ import * as s from './Slide.style'
 import {menuData} from '../../utils/menuData'
 import { useRecoilState} from 'recoil';
 import { menuSelectedState } from '../../Recoil/atom';
+import { useHistory } from 'react-router-dom';
 
 
 const Slide = () => {
     const [menuSelected, setMenuSelected] = useRecoilState(menuSelectedState);
-
+    let history = useHistory();
     const next = () =>{
-        menuSelected < (menuData.length - 1) ? setMenuSelected(menuSelected + 1) : setMenuSelected(0)
-        //console.log(menuSelected)
+        menuSelected < (menuData.length - 1) ? setMenuSelected(menuSelected + 1) : setMenuSelected(0);
+        const url = menuData[menuSelected].to;
+        history.push(url)    
     }
 
     const prev = () =>{
         !!menuSelected ? setMenuSelected(menuSelected - 1) : setMenuSelected(menuData.length - 1)
-        //console.log(menuSelected)
+        const url = menuData[menuSelected].to;
+        history.push(url)
     }
 
     return (

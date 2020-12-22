@@ -18,6 +18,7 @@ const Sidebar = () => {
             <s.MenuItemsContainer>
                 {
                     menuData.map((item,index) => (
+                        
                       <Link to={item.to} key={index} 
                           onClick={ () => {handleSelectMenu(index)}  }
                           >
