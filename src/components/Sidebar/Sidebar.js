@@ -8,7 +8,7 @@ import { menuSelectedState } from '../../Recoil/atom';
 const Sidebar = () => {
 
     const [menuSelected, setMenuSelected] = useRecoilState(menuSelectedState);
-
+    const last = menuData.length - 1;
     const handleSelectMenu = (index) => {
         setMenuSelected(index)
     }
@@ -22,7 +22,7 @@ const Sidebar = () => {
                       <Link to={item.to} key={index} 
                           onClick={ () => {handleSelectMenu(index)}  }
                           >
-                        <s.MenuItem isSelected={menuSelected} index={index}> 
+                        <s.MenuItem isSelected={menuSelected} index={index} last={last}> 
                         <s.Icon>
                             {item.icon}
                         </s.Icon>

@@ -1,10 +1,16 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const CardResumeContainer = styled.div`
 grid-column:2/5;
 grid-row: 1;
 background-color:#444444;
-
+z-index:1000;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+min-height:100%;
+height:fit-content;
+@media screen and (max-width: 768px){
+    display:none;
+}
 `;
 
 export const ImageContainer = styled.div`

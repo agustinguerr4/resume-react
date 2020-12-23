@@ -10,25 +10,26 @@ const Slide = () => {
     const [menuSelected, setMenuSelected] = useRecoilState(menuSelectedState);
 
     let history = useHistory();
-
+    var url = '';
     const next = () =>{
         if(menuSelected < (menuData.length - 1)){
             setMenuSelected(menuSelected);
-            var url = menuData[menuSelected + 1].to;
+            url = menuData[menuSelected + 1].to;
         }else{
             setMenuSelected(0);
-            var url = '/';  
+            url = '/';  
         }
         history.push(url)    
     }
 
     const prev = () =>{
+
         if(menuSelected > 0){
             setMenuSelected(menuSelected - 1);
-            var url = menuData[menuSelected - 1].to;
+            url = menuData[menuSelected - 1].to;
         }else{
             setMenuSelected(menuData.length - 1)
-            var url = menuData[menuData.length-1].to;  
+            url = menuData[menuData.length-1].to;  
         }
         
         console.log(url,menuSelected)

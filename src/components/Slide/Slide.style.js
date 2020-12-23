@@ -11,20 +11,25 @@ width:45px;
 background-color:#444444;
 border-radius:100px;
 border: 2px solid #7ac565;
+box-shadow: -6px 2px 5px rgba(0,0,0,0.2);
+transition: .3s ease all;
+&:hover{
+    transform:translateY(-4px);
+    box-shadow: -6px 2px 5px rgba(0,0,0,0.5);
+    transition: .3s ease all;
+}
 `;
 export const SlideNext = styled.div`
 
-width:30px;
-height:30px;
+width:45px;
+height:45px;
 border-radius:50%;
 transform: translateY(5px);
-
-
 `;
 
 export const SlidePrev = styled.div`
-width:30px;
-height:30px;
+width:45px;
+height:45px;
 border-radius:50%;
 transform: translateX(-2px);
 `;
