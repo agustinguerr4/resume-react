@@ -18,6 +18,11 @@ transition: .3s ease all;
     box-shadow: -6px 2px 5px rgba(0,0,0,0.5);
     transition: .3s ease all;
 }
+
+@media screen and (max-width: 768px){
+
+background-color:#000000;
+}
 `;
 export const SlideNext = styled.div`
 

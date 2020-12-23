@@ -8,6 +8,7 @@ z-index:1000;
 box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 min-height:100%;
 height:fit-content;
+
 @media screen and (max-width: 768px){
     display:none;
 }
