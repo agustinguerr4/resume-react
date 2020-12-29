@@ -7,7 +7,7 @@ import MainView from './components/MainView/MainView';
 import Slide from './components/Slide/Slide';
 import {menuData} from './utils/menuData'
 import { useRecoilState} from 'recoil';
-import { menuSelectedState } from './Recoil/atom';
+import { menuSelectedState } from './Recoil/Atoms';
 import { useHistory } from 'react-router-dom';
 import Dropdown from './components/Dropdown/Dropdown';
 import DropdownButton from './components/DropdownButton/DropdownButton';

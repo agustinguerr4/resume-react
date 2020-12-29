@@ -1,9 +1,10 @@
 import React from 'react'
 import {menuData} from '../../utils/menuData'
 import { useRecoilState} from 'recoil';
-import { menuSelectedState } from '../../Recoil/atom';
+import { menuSelectedState } from '../../Recoil/Atoms';
 import { useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import * as s from './Resume.style'
 
 const Resume = () => {
 
@@ -11,32 +12,27 @@ const Resume = () => {
     const history = useHistory();
     menuData.map((item,index) => { item.to === history.location.pathname && setMenuSelected(index); return(menuSelected)})
     
+    
     const pageVariants = {
         in:{
             opacity:1,
-            x:0,
-            scale: [1, 3, 2, 2.3, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-         
+            x:0
         },
         out:{
-            opacity:0,
-            x:'-100vh'
+            opacity:0
         }
     }
 
     const pageTransition = {
-        duration:2,
-        type:'spring',
-        stiffness: 200
+        duration:2
     }
     return (
         <motion.div
         initial="out"
         animate="in"
         exit="out" variants={pageVariants} transition={pageTransition}>
-            Resume
+           <s.ResumeContainer>Resume
+               </s.ResumeContainer> 
         </motion.div>
     )
 }

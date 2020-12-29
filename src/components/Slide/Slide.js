@@ -2,7 +2,7 @@ import React from 'react'
 import * as s from './Slide.style'
 import {menuData} from '../../utils/menuData'
 import { useRecoilState} from 'recoil';
-import { menuSelectedState } from '../../Recoil/atom';
+import { menuSelectedState } from '../../Recoil/Atoms';
 import { useHistory } from 'react-router-dom';
 
 
@@ -31,8 +31,6 @@ const Slide = () => {
             setMenuSelected(menuData.length - 1)
             url = menuData[menuData.length-1].to;  
         }
-        
-        console.log(url,menuSelected)
         history.push(url)    
     }
 

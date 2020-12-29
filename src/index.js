@@ -7,14 +7,16 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
 
-  <RecoilRoot>
     <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
-  </React.StrictMode>
 
-  </RecoilRoot>  ,
+  <RecoilRoot>
+    <BrowserRouter>
+       <App />
+    </BrowserRouter>
+
+  </RecoilRoot> 
+  </React.StrictMode>
+ ,
   document.getElementById('root')
 );
 

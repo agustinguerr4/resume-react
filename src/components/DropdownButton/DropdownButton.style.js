@@ -12,6 +12,7 @@ display:flex;
 justify-content:center;
 align-items:center;
 color:#222222;
+z-index:1020;
 @media screen and (min-width: 768px){
     display:none;
 }

@@ -3,7 +3,7 @@ import * as s from './Sidebar.style'
 import { menuData } from '../../utils/menuData'
 import { Link } from 'react-router-dom'
 import { useRecoilState} from 'recoil';
-import { menuSelectedState } from '../../Recoil/atom';
+import { menuSelectedState } from '../../Recoil/Atoms';
 
 const Sidebar = () => {
 

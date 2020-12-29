@@ -33,6 +33,8 @@ padding:1rem 0rem;
 transition: .3s all;
 &:hover{
     color: #7ac565;
+    transform: translateY(-2px);
+    transition .3s all;
 }
 `;
 

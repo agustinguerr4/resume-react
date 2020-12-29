@@ -1,9 +1,11 @@
 import React from 'react'
 import {menuData} from '../../utils/menuData'
 import { useRecoilState} from 'recoil';
-import { menuSelectedState } from '../../Recoil/atom';
+import { menuSelectedState } from '../../Recoil/Atoms';
 import { useHistory } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import * as s from './About.style'
+
 const About = () => {
 
     const [menuSelected, setMenuSelected] = useRecoilState(menuSelectedState);
@@ -14,15 +16,10 @@ const About = () => {
     const pageVariants = {
         in:{
             opacity:1,
-            x:0,
-            scale: [1, 3, 2, 2.3, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-         
+            x:0
         },
         out:{
-            opacity:0,
-            x:'100vh'
+            opacity:0
         }
     }
 
@@ -36,7 +33,10 @@ const About = () => {
         initial="out"
         animate="in"
         exit="out" variants={pageVariants} transition={pageTransition}>
-            About
+            <s.AboutContainer>
+              About
+            </s.AboutContainer>
+            
         </motion.div>
     )
 }
